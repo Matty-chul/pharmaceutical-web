@@ -76,11 +76,11 @@ We will now perform an INSERT query to demonstrate its functionality on the drug
 
 Checking for the inserted ExampleDrug2, we can notice a typo error on the ExampleDrug. The expiry date predates the manufacturing date.
 
-![image](https://github.com/user-attachments/assets/8341ee3d-f4a3-445c-8d84-bd47aa4225d2)
+![image](https://github.com/user-attachments/assets/67c9b66b-c1ff-48c8-9e86-c42babc69dba)
 
 We can fix this typo by updating the appropiate field. We execute the update based on the ExampleDrug ID:
 
-![image](https://github.com/user-attachments/assets/67c9b66b-c1ff-48c8-9e86-c42babc69dba)
+![image](https://github.com/user-attachments/assets/98d400df-928e-46b6-b949-eac3b75ab563)
 
 And the updated result:
 
