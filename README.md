@@ -8,6 +8,7 @@ This README file serves as a demonstration of the functionalities of a pharmaceu
 Prerequisites:
 
 - XAMPP web server solution installed, namely the Apache and MySQL service modules;
+- Have the sqlbase folder copied at the *xampp/htdocs* location;
 - Importation of the pharmaceutical database. To do so, simply import the **pharma_db.sql** schema file in the **localhost/phpmyadmin** under the **import** section using default settings, once the service modules are up and running.
 
 Application structure:
@@ -29,6 +30,7 @@ The database structure is as follows:
 
 ![image](https://github.com/user-attachments/assets/72fc5a72-81cb-4e93-920d-7a575ca8ebb5)
 
+**IMPORTANT NOTE**: The database connection is configured by default for port 3306 and for the exception port 3310. Should the MySQL service module listen on another port other than these two options, variable *$exceptionport* needs to be modified accordingly in the **dbh.inc.php** file.
 
 ### Application Showcase
 
