@@ -32,6 +32,8 @@ The database structure is as follows:
 
 ### Application Showcase
 
+#### *SELECT Query*
+
 The database already has some mock values loaded up for interaction. Accessing **localhost/sqlbase** redirects the user to the home page.
 
 ![image](https://github.com/user-attachments/assets/5881667f-fc61-45c7-9b50-7319a44449f7)
@@ -50,6 +52,7 @@ In the contracts table we can also observe that the suspicious manufacturer has 
 
 ![image](https://github.com/user-attachments/assets/58f9219c-cd38-468b-bf07-f391d3640d79)
 
+#### *DELETE Query*
 
 Upon returning home, we select a DELETE action in the manufacturers table:
 
@@ -59,12 +62,29 @@ The follow-up action in the image above will execute a DELETE query using the "S
 
 ![image](https://github.com/user-attachments/assets/33e1531d-4151-45f9-a5e5-045645fc5c8f)
 
-Indicating the fact that the "Shady Producer" in question has been succesfully deleted. This action also relevantly deleted the contract associated with the "Shady Producer":
+Indicating the fact that the "Shady Producer" in question has been succesfully deleted. This action has also relevantly deleted the contract associated with the "Shady Producer":
 
 ![image](https://github.com/user-attachments/assets/e87f9943-1039-494d-8a2b-b57b53a0c87c)
 
-Lastly, we will perform an INSERT query to demonstrate its functionality on the drugs table.
+#### *INSERT & UPDATE Query*
 
+We will now perform an INSERT query to demonstrate its functionality on the drugs table.
+
+![image](https://github.com/user-attachments/assets/e1ffd5c0-c9c4-41de-a53b-4238fe6405be)
+
+Checking for the inserted ExampleDrug2, we can notice a typo error on the ExampleDrug. The expiry date predates the manufacturing date.
+
+![image](https://github.com/user-attachments/assets/8341ee3d-f4a3-445c-8d84-bd47aa4225d2)
+
+We can fix this typo by updating the appropiate field. We execute the update based on the ExampleDrug ID:
+
+![image](https://github.com/user-attachments/assets/67c9b66b-c1ff-48c8-9e86-c42babc69dba)
+
+And the updated result:
+
+![image](https://github.com/user-attachments/assets/215ee38f-cb91-4686-9105-c6d0b5487984)
+
+This concludes the functionalities developed into the "Pharmaceutical Database" project. I highly encourage anyone to set the directory up and experiment with values!
 
 
 
