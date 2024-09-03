@@ -1,0 +1,37 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+	$actchoi=$_POST["actionchoice"];
+	$tabchoi=$_POST["tablechoice"];
+	if($actchoi=="INSERARE"){
+		if($tabchoi=="producatori")header("Location:inserters/INSERT_PRODUCATORI.php");	
+		if($tabchoi=="farmacie")header("Location:inserters/INSERT_FARMACIE.php");
+		if($tabchoi=="medicamente")header("Location:inserters/INSERT_MEDICAMENTE.php");
+		if($tabchoi=="resurse")header("Location:inserters/INSERT_RESURSE.php");
+		if($tabchoi=="contracte")header("Location:inserters/INSERT_CONTRACTE.php");
+	}
+	if($actchoi=="STERGERE"){
+		if($tabchoi=="producatori")header("Location:deleters/DELETE_PRODUCATORI.php");
+		if($tabchoi=="farmacie")header("Location:deleters/DELETE_FARMACIE.php");
+		if($tabchoi=="medicamente")header("Location:deleters/DELETE_MEDICAMENTE.php");	
+		if($tabchoi=="resurse")header("Location:deleters/DELETE_RESURSE.php");	
+		if($tabchoi=="contracte")header("Location:deleters/DELETE_CONTRACTE.php");	
+	}
+	if($actchoi=="ACTUALIZARE"){
+		if($tabchoi=="producatori")header("Location:updaters/UPDATE_PRODUCATORI.php");
+		if($tabchoi=="farmacie")header("Location:updaters/UPDATE_FARMACIE.php");
+		if($tabchoi=="medicamente")header("Location:updaters/UPDATE_MEDICAMENTE.php");
+		if($tabchoi=="resurse")header("Location:updaters/UPDATE_RESURSE.php");
+		if($tabchoi=="contracte")header("Location:updaters/UPDATE_CONTRACTE.php");
+	}
+	if($actchoi=="CAUTARE"){
+		if($tabchoi=="producatori")header("Location:searchers_viewers/SEARCH_PRODUCATORI.php");
+		if($tabchoi=="farmacie")header("Location:searchers_viewers/SEARCH_FARMACIE.php");
+		if($tabchoi=="medicamente")header("Location:searchers_viewers/SEARCH_MEDICAMENTE.php");
+		if($tabchoi=="resurse")header("Location:searchers_viewers/SEARCH_RESURSE.php");
+		if($tabchoi=="contracte")header("Location:searchers_viewers/SEARCH_CONTRACTE.php");
+	}	
+}
+else{
+	header("Location:index.php");
+}
